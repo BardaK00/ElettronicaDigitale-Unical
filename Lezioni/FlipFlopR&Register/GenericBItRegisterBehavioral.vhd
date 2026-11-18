@@ -3,13 +3,13 @@ use ieee.std_logic_1164.all;
 
 entity GenericBitRegisterBehavioral is
 generic(
-    N:integer:=4
-)
+    N:integer:=8
+);
 port(
     D:in std_logic_vector(N-1 downto 0);
     clk,preset:in std_logic;
     Q:out std_logic_vector(N-1 downto 0)
-)
+);
 end GenericBitRegisterBehavioral;
 
 architecture behav of GenericBitRegisterBehavioral is
